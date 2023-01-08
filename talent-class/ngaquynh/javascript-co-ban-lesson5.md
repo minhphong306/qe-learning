@@ -1,4 +1,4 @@
-## Khai báo biến
+# Khai báo biến
 - var : biến
 - Cú pháp var_[tên biến]
 - Note: ký tự đầu tiên phải là chữ
