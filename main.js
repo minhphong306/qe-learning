@@ -13,13 +13,13 @@ function checkDiem(diemToan, diemLi, diemHoa) {
     console.log('Điểm trung bình là:',diemTB);
     if(diemTB >= 0 && diemTB < 4) {
         console.log('Yếu');
-    } if(diemTB >= 4 && diemTB < 6 ) {
+    }else if (diemTB >= 4 && diemTB < 6 ) {
         console.log('Trung bình');
-    }if(diemTB >= 6 && diemTB < 8) {
+    }else if (diemTB >= 6 && diemTB < 8) {
         console.log('Khá');
-    }if(diemTB >=8 && diemTB <=10){
+    }else if (diemTB >=8 && diemTB <=10){
         console.log('Giỏi');
     }   
 
 }
-checkDiem(7,8,9);
+checkDiem(9,8,9);
