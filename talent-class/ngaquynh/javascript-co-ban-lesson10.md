@@ -12,7 +12,9 @@ Việc 1: + 1 cho a, a = a + 1 => a = 7
 
 Việc 2: Trả về a sau khi được + 1 
 
-- EX1: a--
+- EX1:
+
+ a--
 
 Việc 1: 'a copy', 'a copy' = 6
 
