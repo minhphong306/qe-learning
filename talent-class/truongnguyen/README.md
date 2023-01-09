@@ -8,7 +8,7 @@ Tracking learning progress
 - [Learning JavaScript Lesson 6](learning-javascript-basic-lesson-6.md)
 - [Learning JavaScript Lesson 7](learning-javascript-basic-lesson-7.md)
 - [Learning JavaScript Lesson 8](learning-javascript-basic-lesson-8.md)
-
+- [Learning JavaScript Lesson 9](learning-javascript-basic-lesson-9.md)
 - [Learning JavaScript Lesson 10](learning-javascript-basic-lesson-10.md)
 - [Learning JavaScript Lesson 11](learning-javascript-basic-lesson-11.md)
 - [Learning JavaScript Lesson 12](learning-javascript-basic-lesson-13.md)
