@@ -17,3 +17,4 @@ Tracking learning progress
 - [Learning JavaScript Lesson 15](learning-javascript-basic-lesson-15.md)
 - [Learning JavaScript Lesson 16](learning-javascript-basic-lesson-16.md)
 - [Exercise Slide 03](exercise-in-slide-3.js)
+- [Learning TypeScript Lesson 1](learning-typescript-lesson-1.md)
