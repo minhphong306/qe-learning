@@ -16,8 +16,12 @@ Learn how databases work, how to choose the right one, and how to use databases 
 ## SQLite
 SQLite là database ở local, khá linh hoạt (versatile) và đáng tin cậy (reliable). Cùng học cách sử dụng thôii
 
+Small. Fast. Reliable.
+Choose any three.
+
 - [Setup SQLite ở local](0001-setup-sqlite-local.md)
 - [Import & export](0002-import-export.md)
+- [Creating & deleting database and tables with SQLite](0003-creating-and-deleting-database-and-tables-with-sqlite.md)
 
 ## Microsoft SQL Server
 
@@ -30,3 +34,5 @@ SQLite là database ở local, khá linh hoạt (versatile) và đáng tin cậy
 ## Serverless architecture
 
 ## Just for fun
+
+# [SQLite tutorials](https://www.sqlitetutorial.net/)
