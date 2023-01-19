@@ -57,7 +57,7 @@ CREATE TABLE ex2(
         - Nếu giá trị lớn nhất đang là 2147483647 (max int32), column sẽ được fill vào 1 giá trị random.
     - Bạn có thể lấy giá trị này thông qua API `sqlite_last_insert_rowid()` hoặc `last_insert_rowid()`
 
-## Comparison & sort order
+#### Comparison & sort order
 - SQLite ban đầu là typeless, chỉ đơn giản là lưu dữ liệu thôi
 - Tuy nhiên sau này có thêm tính năng thì lại cần chia type ra 1 tí.
     - Cụ thể là chia ra 2 kiểu dữ liệu `numeric` và `text`
@@ -132,3 +132,58 @@ sqlite> select distinct * from t4;
 0.0
 ```
 - Trong ví dụ trên thì là kiểu TEXT -> sẽ ra 2 giá trị khác nhau`
+
+- Mặc định thì câu lệnh `CREATE TABLE` sẽ tạo table trong db main.
+- Nếu muốn tạo trong một db khác thì nhớ ghi vào
+```
+CREATE TABLE test.student (
+    id INTEGER PRIMARY KEY,
+    first_name TEXT,
+    last_name TEXT,
+    age INTEGER,
+    student_email TEXT NOT NULL,
+    class TEXT
+);
+```
+
+- Chỉ tạo bảng nếu chưa tồn tại -> dùng `IF NOT EXISTS`
+```
+CREATE TABLE IF NOT EXISTS student (
+    id INTEGER PRIMARY KEY,
+    first_name TEXT,
+    last_name TEXT,
+    age INTEGER,
+    student_email TEXT NOT NULL,
+    class TEXT
+);
+```
+
+## Validate table với `.schema`
+- Để show toàn bộ table
+```
+sqlite> .schema
+CREATE TABLE t1 (a INTEGER UNIQUE);
+CREATE TABLE t2 (b TEXT UNIQUE);
+CREATE TABLE t3 (a INTEGER);
+CREATE TABLE t4 (b TEXT);
+```
+- Để show 1 table cụ thể
+```
+sqlite> .schema t1
+CREATE TABLE t1 (a INTEGER UNIQUE);
+```
+- Để show ở dạng có indent cho dễ nhìn
+```
+sqlite> .fullschema --indent
+CREATE TABLE t1(a INTEGER UNIQUE);
+CREATE TABLE t2(b TEXT UNIQUE);
+CREATE TABLE t3(a INTEGER);
+CREATE TABLE t4(b TEXT);
+/* No STAT tables available */
+```
+
+- Drop table
+`DROP TABLE IF EXISTS students;
+```
+- Drop database
+    - SQLite không có separate server process giống relational database khác nên không cần dùng command drop database mà chỉ cần xoá file đi là xong.
