@@ -22,6 +22,7 @@ Choose any three.
 - [Setup SQLite ở local](0001-setup-sqlite-local.md)
 - [Import & export](0002-import-export.md)
 - [Creating & deleting database and tables with SQLite](0003-creating-and-deleting-database-and-tables-with-sqlite.md)
+[0]
 
 ## Microsoft SQL Server
 
