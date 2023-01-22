@@ -22,7 +22,9 @@ Choose any three.
 - [Setup SQLite ở local](0001-setup-sqlite-local.md)
 - [Import & export](0002-import-export.md)
 - [Creating & deleting database and tables with SQLite](0003-creating-and-deleting-database-and-tables-with-sqlite.md)
-[0]
+- [Inserting and deleting data with SQLite](0005-how-to-perform-basic-queries-with-select-sqlite.md)
+- [Update in SQLite](0006-update.md)
+- [Export database and schema](0007-how-to-export-database-and-table-schemas-in-sqlite.md)
 
 ## Microsoft SQL Server
 
@@ -37,3 +39,6 @@ Choose any three.
 ## Just for fun
 
 # [SQLite tutorials](https://www.sqlitetutorial.net/)
+
+# [SQLite documentation](https://www.sqlite.org/doclist.html)
+- [35% faster than the filesystem](0008-35-percent-faster-than-the-filesystem.md)
