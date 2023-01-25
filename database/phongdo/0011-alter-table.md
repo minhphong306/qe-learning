@@ -42,8 +42,9 @@
     - Cột xuất hiện trong trigger hoặc view
 ## How it works
 - SQLite lưu schema ở dạng plain text. Dùng DROP COLUMN command (và tất cả các command khác thuộc hạng mục ALTER TABLE) sẽ sửa text này và re-parse lại toàn bộ schema.
-- Command này sẽ thành công khi toàn bộ text được thay đổi.
+- Command này sẽ thành công khi toàn bộ text được thay đổi và parse thành công.
 
 # Disable error checking using PRAGMA writable_schema=ON
+
 # Making other kinds of table schema changes
 # Why alter table is such a problem for SQLite
